@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Maze</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        
+
+        <div class="container location_main">
+            <div class="looser hide">
+                <div class="looser_container">
+                <div class="looser_text">Игра окончена...</div>
+                    <button class="looser_btn" onclick="looser()">Начать сначала</button>
+                </div>
+            </div>
+
+           <span class="logo_img"><img src="img/logo.jpg"></span>
+            
+            <aside>
+                <label><button class="sound_btn nosound" type="checkbox" onclick="sound()"></button></label>
+                <span class="bag" onclick="bag_toggle()"></span>
+               
+                <div class="bag_items hide">
+                    <p class="item_text hide">Нажмите, на предмет, чтобы увидеть его описание</p>
+                    <div class="item" id="item1" onclick="showDescription(this.id)"></div>
+                    <div class="item" id="item2" onclick="showDescription(this.id)"></div>
+                    <div class="item" id="item3" onclick="showDescription(this.id)"></div>
+                    <div class="item" id="item4" onclick="showDescription(this.id)"></div>
+                    <div class="item" id="item5" onclick="showDescription(this.id)"></div>
+                    <div class="item" id="item6" onclick="showDescription(this.id)"></div>
+                    <div class="item" id="item7" onclick="showDescription(this.id)"></div>
+                    <div class="item" id="item8" onclick="showDescription(this.id)"></div>
+                    <div class="item" id="item9" onclick="showDescription(this.id)"></div>
+                    <div class="item" id="item10" onclick="showDescription(this.id)"></div>
+                    <div class="item" id="item11" onclick="showDescription(this.id)"></div>
+                    <div class="item" id="item12" onclick="showDescription(this.id)"></div>
+                    <div class="item" id="item13" onclick="showDescription(this.id)"></div>
+                    <div class="item" id="item14" onclick="showDescription(this.id)"></div>
+                    <div class="item" id="item15" onclick="showDescription(this.id)"></div>
+                    <div class="item" id="item16" onclick="showDescription(this.id)"></div>
+                    <div class="item" id="item17" onclick="showDescription(this.id)"></div>
+                    <div class="item" id="item18" onclick="showDescription(this.id)"></div>
+                                        
+                    <div class="bag_footer">
+                        
+                        <div class="item_stas">
+                            <img src="img/bag.png">
+                            <span class=items_value>0/18</span>
+                        </div>
+
+                        <div class="coins">
+                            <img src="img/coin.png">
+                           <span class="coins_value">0</span>
+                        </div>
+                    </div>
+                </div>
+                <span class="money_bag hide" onclick = "takeMoney()"></span>
+            </aside>
+
+        <div class="welcome">
+            <h1>The story of the queen Batton</h1>
+                    
+                    
+            <div class="welcome_buttons">
+                <button class="welcome_button start_button" onclick="start()">Start Game</button>
+                <button class="welcome_button control_button" onclick="controlWindow()">Control</button>
+                <button class="welcome_button button3">Some text2</button>
+            </div>
+        
+        </div>
+
+        <div class="control_window hide">
+
+
+                <div class = "control_item">
+                    <span class="control_img">
+                        <img src="img/keyboard_buttons/button_w.png">
+                    </span>
+                        <span class="control_text text_w"><p>Движение вверх</p></span>
+                </div>
+
+                <div class = "control_item">
+                    <span class="control_img">
+                        <img src="img/keyboard_buttons/button_s.png">
+                    </span>
+                        <span class="control_text text_s"><p>Движение вниз</p></span>
+                </div>
+
+                <div class = "control_item">
+                    <span class="control_img">
+                        <img src="img/keyboard_buttons/button_d.png">
+                    </span>
+                        <span class="control_text text_d"><p>Движение вправо</p></span>
+                </div>
+
+                <div class = "control_item">
+                    <span class="control_img">
+                        <img src="img/keyboard_buttons/button_a.png">
+                    </span>
+                        <span class="control_text text_a"><p>Движение влево</p></span>
+                </div>
+
+                <div class = "control_item">
+                    <span class="control_img">
+                        <img src="img/keyboard_buttons/button_i.png">
+                    </span>
+                        <span class="control_text text_i"><p>Открыть/закрыть инвентарь</p></span>
+                </div>
+
+        </div>
+
+
+            
+
+        <div class="game_area hide"></div>
+            
+        <div class="test hide">
+            <div class="dialog">
+
+            <div class="dialog_header">      
+            <div class="first_hero"></div>
+            <div class="dialog_message">
+                Пня была из культурной семьи поэтому решила дождаться оффицианта и обьяснить что у нее нет денег и она не может оплатить счет,
+                скорее всего она ждала доброго жеста от кого-то,или что оффициант заплатит за нее,потом позовет на свидание,закружится роман,
+                и далее далее далее.Но нет,Пня загнала себя в финансовую пирамиду долгов изаз чего ей 93 года придется работать на шахте отрабатывая 
+                % долга за счет.
+            </div>
+            <div class="second_hero"></div>
+            <button type="button" class="close_btn" onclick="hideDialog()">X</button>
+            </div>
+                
+            <div class="dialog_buttons"></div>
+        </div>
+
+
+    </div>
+</div>
+    
+    <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
