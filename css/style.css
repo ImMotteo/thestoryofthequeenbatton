@@ -446,6 +446,7 @@ body {
 
 
 .dialog {
+    
     position: fixed;
     width: 55%;
     min-height: 35%;
@@ -483,6 +484,8 @@ body {
 .dialog_message {
     color: rgb(75, 69, 69);
     height: auto;
+    line-height: 1.8;
+    letter-spacing: 1px;
     width: 80%;
     margin: 15px auto;
 }
@@ -863,6 +866,20 @@ body {
 
 .sector_shop4 { 
     background: url('../img/shop/shop4.png') no-repeat;
+    background-position: right;
+    height: 50px;
+    width: 50px;
+}
+
+.sector_shop5 { 
+    background: url('../img/shop/shop5.png') no-repeat;
+    background-position: right;
+    height: 50px;
+    width: 50px;
+}
+
+.sector_shop6 { 
+    background: url('../img/shop/shop6.png') no-repeat;
     background-position: right;
     height: 50px;
     width: 50px;
