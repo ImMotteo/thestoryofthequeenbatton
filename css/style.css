@@ -45,6 +45,11 @@ body {
     animation: looser_opacity 3s linear;
 }
 
+.looser_img {
+    animation: looser_text 3s linear infinite;
+    
+}
+
 .looser_text {
     margin-bottom: 35px;
     padding: 0;
@@ -82,6 +87,7 @@ body {
     background-color: #121212;
     color: #C7F83E;
     font-family: 'Press Start 2P', cursive;
+    transition: 1s;
  
 
 }
@@ -125,6 +131,7 @@ body {
     border: none;
     width: 50px;
     right: 20px;
+    transition: 1s;
     
 }
 
@@ -142,6 +149,7 @@ body {
     width: 50px;
     right: 20px;
     top: 120px;
+    transition: 1s;
 }
 
 .bag:hover {
@@ -377,6 +385,7 @@ body {
     border: 2px solid #A468D5;
     border-radius: 5px;
     opacity: .7;
+    transition: 1s;
 }
 
 .welcome_button:hover {
@@ -429,7 +438,71 @@ body {
 }
 
 
+.hero_choise {
 
+    justify-content: flex-end;
+    width: 70%;
+    background-color: #dce4a6;
+    border: 2px solid #22241e;
+    border-radius: 5px;
+    height: auto;
+    margin: auto;
+    letter-spacing: 1.3px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+
+}
+
+.heroes_messgae {
+    width: 80%;
+    margin: 30px auto 0 auto;
+    text-align: center;
+}
+
+.heroes_area {
+    align-items: flex-end;
+    justify-content: center;
+    display: flex;
+    height: 450px;
+    width: 100%;
+}
+
+.hero_zone {
+    display: inline-block;
+    width: 20%;
+    margin: 0 15px 15px 0;
+    border: 2px solid #22241e;
+    border-radius: 5px;
+    height: 80%;
+    text-align: center;
+    transition: 0.6s;
+
+}
+
+.hero_zone:hover {
+    color: #dce4a6;
+    background-color: #121212;
+    box-shadow: rgba(214, 21, 221, 0.4) 0px 30px 90px;
+    transform: scale(1.03);
+    transition: 0.6s;
+}
+
+.hero_descrition {
+    font-size: 13px;
+    margin: 35px auto;
+    width: 90%;
+
+} 
+
+.hero_zone h4 {
+    margin: 15px auto;
+}
+
+.hero_img {
+    margin: 15px auto;
+    display: block;
+    width: 100%;
+}
 
 .test {
 
@@ -486,6 +559,8 @@ body {
     height: auto;
     line-height: 1.8;
     letter-spacing: 1px;
+    font-family: 'Press Start 2P', cursive;
+    white-space: pre-line;
     width: 80%;
     margin: 15px auto;
 }
@@ -510,6 +585,7 @@ body {
     border: 4px solid #3d4130;
     width: 30px;
     height: 30px;
+    transition: .8s;
 }
 
 .close_btn:hover {
@@ -537,6 +613,7 @@ body {
     width: auto;
     background-color: #3d4130;
     color: #dce4a6;
+    transition: .8s;
 }
 
 .dialog_button:hover {
@@ -673,7 +750,6 @@ body {
 .sector_fence {
     background: url('../img/fence.jpg') no-repeat;
     background-size: cover;
-
     width: 50px;
     height: 50px;
 }
