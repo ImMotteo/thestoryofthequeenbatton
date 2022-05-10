@@ -393,6 +393,8 @@ let btnsShop6 = [
     }
 ]
 
+
+
 let btnsShop100 = [
     {
         name: 'Быстро забрать все с кассы и бежать',
@@ -591,7 +593,7 @@ let shopScenario = [
     {
         name: looserBtns,
         message: `&nbsp; Вольевое решение. Через 30 минут Пня уже писала объяснительную в полицейском участке и погулять сегодня у нее больше точно не получится.
-        <b><style color: red;>Конец истории.</style></b>`,
+        <b><font color="#B50F0F";>Конец истории.</style></b>`,
         id: 98
         
     },
@@ -609,7 +611,7 @@ let shopScenario = [
         name: [],
         message: `&nbsp; Пня вспомнила, что нашла деньги в музее, поэтому с легкостью оплатила покупку! Стоило ли оно того? Вскоре мы это узнаем.
         <b><font color="#6826A1">Добыча: молоко "ВыкачаноИзСисекКоровы".</font><b>`,
-        id: 101,
+        id: 100,
         dialogClose: true
     },
 
@@ -902,7 +904,7 @@ let parkScenario = [
         name: looserBtns,
         message: `Скорее всего она хотела быстро заплатить, вернуться домой, взять деньги и отдать долг. Но нет. Пня загнала себя в финансовую пирамиду долгов 
         из-за чего ей 93 года придется работать на шахте отрабатывая % долга за счет. А ведь всего лишь нужно было прочитать маленький шрифт.\n
-        <b><font color="#4AB5C6">Конец игры.</font></b>`,
+        <b><font color="#B50F0F">Конец истории.</font></b>`,
         id: 3.2
     },
 
@@ -946,7 +948,7 @@ let btnsBar1 = [
     {
         name: 'Пройти дальше в бар',
         nextId: 2
-
+       
     },
 
     {
@@ -962,19 +964,21 @@ let btnsBar2 = [
         nextId: 2.1,
         ded: true
 
+       
+
     },
 
     {
         name: '"Привет, можешь освободить мой столик?"',
         nextId: 2.9,
-        ded: true
+       
 
     },
 
     {
         name: 'Просто сесть рядом',
         nextId: 4,
-        ded: true
+       
 
     }
 ]
@@ -1184,7 +1188,7 @@ let barScenario = [
     {
         name: looserBtns,
         message: `&nbsp; Охохохо, неправильный ответ! Я же говорил, что мои загадки слишком сложны для тебя!
-        <b><font color="#4AB5C6"Конец истории.</font></b>`,
+        <b><font color="#B50F0F"Конец истории.</font></b>`,
         id: 10
     },
 
@@ -1262,7 +1266,7 @@ let barScenario = [
         message: `&nbsp; Обрадовался старик. "Ох, как давно я не пил молока" - сказал он. "Сделаю-ка я пару глоточков перед рассказом истории".
         Не успел он сделать пару глотков, как бездыханно упал на стол. Молоко было (длинная пауза) просрочено.
         &nbsp; Пня не могла до этого догадаться, а поэтому она больше никогда не услышит то, что хотел рассказать старик.\n
-        <b><font color="#4AB5C6">Конец истории.</font></b>`,
+        <b><font color="#B50F0F">Конец истории.</font></b>`,
         id: 8
     },
 
@@ -1342,7 +1346,7 @@ function btnCreate(btnArray) {
         lengthButtons++;
         newBtn.textContent = objButton.name;
 
-        if (ded in objButton) {ded()}
+        if ('ded' in objButton) {ded()}
 
         newBtn.onclick = () => {
 
@@ -1559,7 +1563,7 @@ class MazeRender {
 
         heroCreate.classList.add('sector', 'hero')
         heroCreate.style.top = -1100 + 'px';
-        heroCreate.style.right = -650 + 'px';
+        heroCreate.style.right = -600 + 'px';
         gameArea.appendChild(heroCreate)
     }
     
